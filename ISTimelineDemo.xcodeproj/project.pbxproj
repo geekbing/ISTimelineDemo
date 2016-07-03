@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37659B7B1D28B41900FDC7EC /* ISPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37659B791D28B41900FDC7EC /* ISPoint.swift */; };
+		37659B7C1D28B41900FDC7EC /* ISTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37659B7A1D28B41900FDC7EC /* ISTimeline.swift */; };
 		37B678E81D28B34D000D5F04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B678E71D28B34D000D5F04 /* AppDelegate.swift */; };
-		37B678EA1D28B34D000D5F04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B678E91D28B34D000D5F04 /* ViewController.swift */; };
-		37B678ED1D28B34D000D5F04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B678EB1D28B34D000D5F04 /* Main.storyboard */; };
 		37B678EF1D28B34D000D5F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B678EE1D28B34D000D5F04 /* Assets.xcassets */; };
 		37B678F21D28B34D000D5F04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B678F01D28B34D000D5F04 /* LaunchScreen.storyboard */; };
+		37B678FA1D28B361000D5F04 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B678F91D28B361000D5F04 /* Main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37659B791D28B41900FDC7EC /* ISPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISPoint.swift; sourceTree = "<group>"; };
+		37659B7A1D28B41900FDC7EC /* ISTimeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISTimeline.swift; sourceTree = "<group>"; };
 		37B678E41D28B34D000D5F04 /* ISTimelineDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISTimelineDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B678E71D28B34D000D5F04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		37B678E91D28B34D000D5F04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		37B678EC1D28B34D000D5F04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37B678EE1D28B34D000D5F04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37B678F11D28B34D000D5F04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37B678F31D28B34D000D5F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37B678F91D28B361000D5F04 /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37659B761D28B3C000FDC7EC /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				37B678E71D28B34D000D5F04 /* AppDelegate.swift */,
+				37B678EE1D28B34D000D5F04 /* Assets.xcassets */,
+				37B678F01D28B34D000D5F04 /* LaunchScreen.storyboard */,
+				37B678F31D28B34D000D5F04 /* Info.plist */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		37659B771D28B3CE00FDC7EC /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				37659B781D28B41900FDC7EC /* ISTimeline */,
+			);
+			name = Third;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		37659B781D28B41900FDC7EC /* ISTimeline */ = {
+			isa = PBXGroup;
+			children = (
+				37659B791D28B41900FDC7EC /* ISPoint.swift */,
+				37659B7A1D28B41900FDC7EC /* ISTimeline.swift */,
+			);
+			path = ISTimeline;
+			sourceTree = "<group>";
+		};
 		37B678DB1D28B34D000D5F04 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +85,9 @@
 		37B678E61D28B34D000D5F04 /* ISTimelineDemo */ = {
 			isa = PBXGroup;
 			children = (
-				37B678E71D28B34D000D5F04 /* AppDelegate.swift */,
-				37B678E91D28B34D000D5F04 /* ViewController.swift */,
-				37B678EB1D28B34D000D5F04 /* Main.storyboard */,
-				37B678EE1D28B34D000D5F04 /* Assets.xcassets */,
-				37B678F01D28B34D000D5F04 /* LaunchScreen.storyboard */,
-				37B678F31D28B34D000D5F04 /* Info.plist */,
+				37659B771D28B3CE00FDC7EC /* Third */,
+				37659B761D28B3C000FDC7EC /* Support */,
+				37B678F91D28B361000D5F04 /* Main.swift */,
 			);
 			path = ISTimelineDemo;
 			sourceTree = "<group>";
@@ -124,7 +152,6 @@
 			files = (
 				37B678F21D28B34D000D5F04 /* LaunchScreen.storyboard in Resources */,
 				37B678EF1D28B34D000D5F04 /* Assets.xcassets in Resources */,
-				37B678ED1D28B34D000D5F04 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +162,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37B678EA1D28B34D000D5F04 /* ViewController.swift in Sources */,
+				37B678FA1D28B361000D5F04 /* Main.swift in Sources */,
+				37659B7B1D28B41900FDC7EC /* ISPoint.swift in Sources */,
+				37659B7C1D28B41900FDC7EC /* ISTimeline.swift in Sources */,
 				37B678E81D28B34D000D5F04 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +172,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		37B678EB1D28B34D000D5F04 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				37B678EC1D28B34D000D5F04 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		37B678F01D28B34D000D5F04 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,6 +307,7 @@
 				37B678F81D28B34D000D5F04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
